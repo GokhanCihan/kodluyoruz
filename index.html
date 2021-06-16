@@ -6,65 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google!</title>
 </head>
-<body>
+<body style="justify-content: center; background-color: #FFFFFF;">
 
     <!--Logo Section-->
-    <img src="img/google.jpg" alt="Google!">
+    <figure style="display: flex; justify-content: center;">
+        <img src="img/google.jpg" alt="Google!" style=" justify-content: center;">
+    </figure>
 
+    
     <!--Search Section-->
-    <main style="display: block; background-color: lightgray; width: 1000; ">
-
-        <!--Search Bar with Label-->
-        <label for="search-bar" style="display: block;">
-            Search the web using Google! <br>
-            <input  type="text" name="search-bar" style="width: auto;">
-        </label>
-
-        <!--Search Button-->
-        <button type="button" name="search-button">Google Search</button>
+    <section style="display: flex; align-items: center; justify-content: center; background-color: #eeeeee; flex-direction: column;">
         
-        <!--Lucky Button-->
-        <button type="button">I'm feeling lucky</button>
-    </main>
+        <!--Search Bar-->
+        
+        <p style="margin: 0; font-size: 20px;">Search the web using Google!</p> 
+        <input  type="text" name="search-bar" style="width: 500px;">
+    
+        
+        <!--Search Buttons-->
+        <section>
+        
+            <button type="button" name="search-button" style="font-size: 20px;">Google Search</button>
+        
+            <button type="button" name="lucky" style="font-size: 20px;">I'm feeling lucky</button>
+       
+        </section>
+    </section>
 
     <!--Bottom Container-->
-    <section style="display: block; width: 100%;">
+    <section style="display: flex; justify-content: center; width: 100%; flex-direction: row;">
         
         <!--Special Search/Left-->
-        <section style="background-color: #6fe7fcd5; display: inline-block; width: max-content;"  >
-            <p style="display: block;">Special Searches</p>
-            <a href="" style="display: block;">
+        <section style=" display: flex; flex-direction: column; justify-content: center; text-align: center; width: 37%; background-color: #7ee5da;">
+            <p style="margin: 0;">Special Searches</p>
+            <a href="">
                 Standford Search
             </a> 
-            <a href="" style="display: block;">
+            <a href="">
                 Linux Search
             </a>
         </section>
 
         <!--Info/Middle-->
-        <section style="background-color: #58d5eb; display: inline-block; width: max-content;">
-            <a href="" style="display: block;">Help!</a>
-            <a href="" style="display: block;">About Google!</a>
-            <a href="" style="display: block;">Company Info</a>
-            <a href="" style="display: block;">Google! Logos</a>
+        <section style="display:flex; flex-direction: column; justify-content: center; text-align: center; background-color: #70ccc2;">
+            <a href="">Help!</a>
+            <a href="">About Google!</a>
+            <a href="">Company Info</a>
+            <a href="">Google! Logos</a>
         </section>
 
         <!--Subscription/Right-->
-        <section style="background-color: #4cb9ccd5; display: inline-block; width: max-content;">
+        <section style="display:flex; justify-content: center; text-align: center; flex-direction: column; background-color: #62b3aa;">
 
             <!--Email Input with label-->
-            <Label style="display: block; justify-self: center;" > Get Google! <br>
+            <Label style="display: flex; flex-direction: column;"> Get Google! <br>
                 updates monthly 
-            <input type="email" name="email" id="email" placeholder="your e-mail" style="display: block;">
+            <input type="email" name="email" id="email" placeholder="your e-mail">
             </Label>
-            <!--Submit Button-->
-            <button type="submit" >Subscribe</button>
-            <!--Archive Link-->
-            <a href="">Archive</a> 
-
+            
+            <section>
+                <!--Submit Button-->
+                <button type="submit" >Subscribe</button>
+                <!--Archive Link-->
+                <a href="">Archive</a> 
+            </section>
         </section>
-        
+
     </section>    
     <!--Footer-->   
+    
 </body>
 </html>
