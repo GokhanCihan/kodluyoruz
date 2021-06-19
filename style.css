@@ -1,4 +1,7 @@
+/*set display to flex justify content to right  */
 .header {
+  display: flex;
+  justify-content: flex-end;
   list-style-type: none;
   margin: 10px;
   overflow: hidden;
@@ -7,9 +10,17 @@
   font-size: 13px;
 }
 
+
+.headerli {
+  /*aligns side by side  */
+  display:inline-block;  
+}
+
+/*use inline-block to align list elements vertically to middle */
 .headerli a {
-  display: block;
+  display: inline-block;
   color: black;
+  vertical-align: middle;
   text-align: center;
   padding: 5px 5px;
   text-decoration: none;
