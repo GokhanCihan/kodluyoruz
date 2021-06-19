@@ -48,6 +48,7 @@
   margin: 100px;
 }
 
+/*corners rounded*/
 .search-area {
   background: #fff;
   display: flex;
@@ -58,6 +59,10 @@
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
 .search-area:hover {
@@ -126,6 +131,13 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  width: 480px ;
+  border: none;
+}
+
+.mic-img {
+  display: flex;
+  align-items: center;
 }
 
 .googlesearch {
