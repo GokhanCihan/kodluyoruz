@@ -1,9 +1,4 @@
-h1 {
-    text-align: center;
-    color: #433520;
-}
-
-h2 {
+h1,h2,h3 {
     text-align: center;
     color: #433520;
 }
@@ -72,13 +67,14 @@ div.img-container > img {
 
 .songs-container {
     width: 50%; 
+    overflow-y: hidden;
 }
 
 div.songs-container > ol {
     list-style-position: inside;
     position: relative;
     top: 50%;
-    transform: translateY(-55%);
+    transform: translateY(-55%);   
     text-align: center;
     color: #FDE8CD;
 }
