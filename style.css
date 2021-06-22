@@ -1,0 +1,84 @@
+h1,h2,h3 {
+    text-align: center;
+    color: #433520;
+}
+
+h3 {
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+}
+
+nav {
+    background-color: #025955;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;   
+}
+
+a:link {
+    color: #FDE8CD;
+}
+
+a:visited{
+    color: #FDE8CD;
+}
+
+a:hover {
+    color: #00917C;
+}
+
+main {
+    padding: 2%;
+    background-color: #025955;
+}
+
+.container {
+    display: flex;
+    height: 350px;
+    margin-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 0 px;
+    justify-content: space-between;
+    background-color: #00917C;
+    border: 5px;
+    border-style: groove;
+    border-color: #025955;
+
+}
+
+.img-container {
+    width: fit-content;
+    height: 100%;    
+}
+
+/*(position, top, translate) resmi dikeyde ortalar*/
+div.img-container > img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.songs-container {
+    width: 50%; 
+    overflow-y: hidden;
+}
+
+div.songs-container > ol {
+    list-style-position: inside;
+    position: relative;
+    top: 50%;
+    transform: translateY(-55%);   
+    text-align: center;
+    color: #FDE8CD;
+}
+
+li {
+    padding: 2px;
+}
