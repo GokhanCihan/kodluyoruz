@@ -1,0 +1,15 @@
+h1, h2 {
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-left: 16px;
+    margin-right: 16px;
+}
