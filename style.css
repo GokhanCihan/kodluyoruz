@@ -1,9 +1,15 @@
+body {
+    background-color: #cee5d0;
+}
+
 h1, h2 {
     text-align: center;
+    color: #5E454B;
 }
 
 h3 {
     text-align: center;
+    color: #D8B384;
 }
 
 p {
@@ -31,4 +37,23 @@ nav {
     padding: 0px;
     text-align: center;
     list-style-position: inside;
+}
+
+/*ürünler sayfası*/
+.urun {
+    margin: 16px 210px;
+    text-align: center;
+    background-color: #F3F0D7;
+    border: 1px groove #D8B384;
+    list-style-type: none;
+}
+
+img {
+    padding: 20px;
+    width: 200px;
+    height: auto;
+}
+
+figcaption {
+    color: #5E454B;
 }
