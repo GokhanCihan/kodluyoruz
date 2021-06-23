@@ -4,6 +4,8 @@
   color: gray;
   background-position: 40%;
   background-size: 6%;
+  background-image: url(/assets/search-solid.svg);
+  background-repeat: no-repeat;
 }
 
 input.empty {
@@ -20,6 +22,13 @@ input.empty {
   color: black;
 }
 
+.logo {
+  margin-left: 192px;
+}
+
+.middlearea{
+  max-height: 200px !important;
+}
 
 .storyphoto {
   width: 60px;
