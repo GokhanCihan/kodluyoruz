@@ -28,9 +28,6 @@ input.searche::placeholder {
   background-color: #f3f2ef;
 }
 
-
-
-
 .menutext {
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
@@ -54,7 +51,7 @@ button.mediatext:hover {
 
 .mediatext {
   font-size: 15px;
-  font-weight: bold;
+  font-weight:700;
   font-family: Arial, Helvetica, sans-serif;
   color: #5f5f5f;
 }
@@ -75,9 +72,10 @@ input.content::placeholder {
   font-weight: bolder;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(/bootstraplinkedinclone/assets/edit-regular.svg);
+  background-image: url(/assets/edit-regular.svg);
   background-repeat: no-repeat;
   background-size: auto;
+  padding-left: 25px;
 }
 
 div.card {

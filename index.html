@@ -21,7 +21,7 @@
   <body class="body">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbarbg fixed-top py-0 d-flex">
+    <nav class="navbar navbar-expand-lg navbar-light navbarbg fixed-top d-flex">
       <!-- Logo -->
       <a class="navbar-brand ml-5 pl-5" href="#"
         ><i
@@ -127,50 +127,52 @@
     </nav>
     <!-- end of navbar -->
 
-    <div>
+    <div class="container" style="padding-top: 100px;"">
       <div class="row">
         <!-- sol panel -->
-        <div class="">
+        <div class="col-2">
           <div class="card" style="width: 14rem">
-            <div
-              class="card-header"
+            <div class="card-header text-center"
               style="
                 background-image: url(https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Falejandrocremades%2Ffiles%2F2018%2F12%2Fbusiness-3605367_1920-1200x741.jpg);
                 height: 53px;
               "
             >
               <img
-                src="https://media-exp1.licdn.com/dms/image/C4D03AQFpMjVJ_N2wRQ/profile-displayphoto-shrink_100_100/0/1582787654653?e=1616630400&v=beta&t=C1X2NxhcN0R0GmELl1Ew7BeOoyGbwJXCw8c7lHm6XuA"
-                class=""
+                src="./assets/ben.jpg"
+                class="rounded-circle"
                 style="
-                  width: 70px;
-                  height: 70px;
+                  width: 68px;
+                  height: 68px;
+                  border: 2px solid white;
                 "
               />
             </div>
-            <div class="card-body">
-              <p class="card-title header">
-                <a href="https://www.linkedin.com/in/cengizcmataraci/" target="_blank" style="color: #212529;">Cengiz Cemal Mataracı</a>
+            <div class="card-body pt-3 pr-3 pb-3 pl-3">
+              <p class="card-title header text-center pt-4 font-weight-lighter mb-0">
+                <a href="https://www.linkedin.com/in/g%C3%B6khan-cihan-36092aba/" target="_blank" style="color: #212529;">Gökhan Cihan</a>
               </p>
               <div
                 style="
+                  text-align: center;
+                  font-size: 12px;
                   margin-bottom: 10px;
                   color: #5f5f5f;
                 "
               >
-                Software Developer at Navlungo - Dijital Lojistik Platformu
+                Front-end Web Developer 
               </div>
               <hr />
               <div class="card-text">
                 <div>
                   <span class="view">Profilinizi kimler görüntüledi </span
-                  ><span class="float-right view mt-1" style="color: #0a66c2"
+                  ><span class="float-right view mt-1" style="color: #0a66c2; font-size: 12px;"
                     >447</span
                   >
                 </div>
                 <div>
                   <span class="view">Yayınınız için görüntüleme </span
-                  ><span class="float-right view mt-1" style="color: #0a66c2"
+                  ><span class="float-right view mt-1" style="color: #0a66c2; font-size: 12px;"
                     >150</span
                   >
                 </div>
@@ -178,22 +180,22 @@
             </div>
             <div class="card-footer ">
               <i class="fas fa-bookmark"></i
-              ><span class="mb-4"
+              ><span class="mb-4 ml-2"
                 >Ögelerim</span
               >
             </div>
           </div>
           <div class="card mt-2" style="width: 14rem">
             <div
-              class="card-header"
-              style="margin-bottom: -22px; font-size: 18px"
+              class="card-header text-muted"
+              style="margin-bottom: -15px; font-size: 18px"
             >
               Sayfalarım
             </div>
             <div class="card-body">
               <div class="card-title">
                 <img
-                  src="https://media-exp1.licdn.com/dms/image/C4E0BAQGl9HYLHdcl6g/company-logo_100_100/0/1610108537301?e=1619654400&v=beta&t=MxTTjGSiH6Xvx2x9YMbjgLWIaU5uojZNqXGGuUIWUQo"
+                  src="./assets/evrim-agaci.webp"
                   style="width: 32px; height: 32px"
                 />
                 <div
@@ -204,10 +206,10 @@
                     margin-left: 37px;
                   "
                 >
-                  Kablosuz Beyin
+                  Evrim Ağacı
                 </div>
                 <div
-                  class=""
+                  class="d-flex"
                   style="
                     font-size: 13px;
                     font-weight: bold;
@@ -216,20 +218,17 @@
                   "
                 >
                   Sayfa Bildirimleri
-                  <span class="" style="color: #0a66c2">10</span>
+                  <span class="ml-auto" style="color: #0a66c2">10</span>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="card mt-2"
-            style="width: 14rem;"
-          >
+          <div class="card mt-2" style="width: 14rem; overflow: visible; position: sticky; top: 4rem;">
             <div
-              class="card-header bg-white border-0"
+              class="card-header bg-white border-0 text-muted"
               style="font-size: 12px"
             >
-              En Yeni
+              <strong>En Yeni</strong>  
             </div>
             <div class="card-body">
               <div class="card-title">
@@ -321,7 +320,7 @@
               </div>
             </div>
             <div
-              class="card-footer"
+              class="card-footer text-dark text-center"
             >
               Daha fazla keşfet
             </div>
@@ -330,7 +329,7 @@
         <!-- sol panel -->
 
         <!-- orta panel -->
-        <div class="col-3" style="">
+        <div class="col-6 ml-5" style="width: 540px;">
           <div class="card">
             <div class="card-body">
               <input
@@ -339,30 +338,33 @@
                 placeholder="Bir gönderi başlat"
               />
               <span
-                ><button class="mediatext">
+                ><button class="mediatext btn">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" focusable="false">
-  <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
-</svg><span class="ml-1 mediatext">Fotoğraf</span>
-                </button></span
-              >
-              <span
-                ><button class="mediatext">
+                    <path style="fill: rgb(112, 181, 249);" d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+                  </svg>
+                  <span class="ml-1 mediatext">Fotoğraf</span>
+                </button>
+              </span>
+              <span>
+                <button class="mediatext btn">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" focusable="false">
-  <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
-</svg><span class="ml-1 mediatext">Video</span>
-                </button></span
-              >
+                    <path style="fill: rgb(127, 193, 94);" d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z">
+                    </path>
+                  </svg>
+                    <span class="ml-1 mediatext">Video</span>
+                </button>
+                </span>
               <span
-                ><button class="mediatext">
+                ><button class="mediatext btn">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" focusable="false">
-  <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
+  <path style="fill: rgb(231, 163, 62);" d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
 </svg><span class="ml-1 mediatext">Etkinlik</span>
                 </button></span
               >
               <span
-                ><button class="mediatext">
+                ><button class="mediatext btn">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="" width="24" height="24" focusable="false">
-  <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+  <path style="fill: rgb(245, 152, 126);" d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
 </svg><span class="ml-1 mediatext">Yazı yaz</span>
                 </button></span
               >
@@ -546,7 +548,7 @@
         <!-- orta panel -->
 
         <!-- sağ panel -->
-        <div class="">
+        <div class="col-3">
           <div class="card" style="width: 19rem">
             <div class="card-header bg-white border-0">
               <span>Akışınıza ekleyin</span
