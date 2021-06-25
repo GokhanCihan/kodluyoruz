@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linkedin</title>
-    <link rel="stylesheet" href="/bootstraplinkedinclone/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -19,9 +19,11 @@
     />
   </head>
   <body class="body">
+
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbarbg">
-      <a class="navbar-brand" href="#"
+    <nav class="navbar navbar-expand-lg navbar-light navbarbg fixed-top">
+      <!-- Logo -->
+      <a class="navbar-brand ml-5 pl-5" href="#"
         ><i
           class="fab fa-linkedin fa-lg"
           style="color: #0a66c2; font-size: 2.4rem"
@@ -36,7 +38,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       ></button>
-      <form class="form-inline">
+      <form class="form-inline pr-5">
         <input
           class="form-control searche"
           type="search"
@@ -44,26 +46,26 @@
           aria-label="Search"
         />
       </form>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto ml-4">
+      <div class="collapse navbar-collapse pl-5 ml-3 pr-5">
+        <ul class="navbar-nav mr-auto ml-5 mr-5 text-center">
           <li class="nav-item active mr-3">
             <a class="nav-link" href="#"
               ><i class="fas fa-home fa-lg" style="color: black">
-                <div class="menutext" style="color: black">Ana Sayfa</div></i
+                <div class="menutext text-nowrap" style="color: black">Ana Sayfa</div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-4">
             <a class="nav-link" href="#"
               ><i class="fas fa-user-friends fa-lg">
-                <div class="menutext">Ağım</div></i
+                <div class="menutext text-nowrap">Ağım</div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-2">
             <a class="nav-link" href="#"
               ><i class="fas fa-briefcase fa-lg">
-                <div class="menutext">İş İlanları</div></i
+                <div class="menutext text-nowrap">İş İlanları</div></i
               >
             </a>
           </li>
@@ -91,13 +93,15 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <img
+              <img 
+                
                 src="https://media-exp1.licdn.com/dms/image/C4D03AQFpMjVJ_N2wRQ/profile-displayphoto-shrink_100_100/0/1582787654653?e=1616630400&v=beta&t=C1X2NxhcN0R0GmELl1Ew7BeOoyGbwJXCw8c7lHm6XuA"
                 style="
                   width: 25px;
                   height: 25px;
                 "
               />
+              
               <div
                 class="menutext"
               >
@@ -113,19 +117,19 @@
           <li class="nav-item active">
             <a class="nav-link" href="#"
               ><i class="fas fa-chalkboard fa-lg">
-                <div class="menutext">İş İlanı Yayınla</div></i
+                <div class="menutext text-nowrap">İş İlanı Yayınla</div></i
               >
             </a>
           </li>
         </ul>
       </div>
     </nav>
+    <!-- end of navbar -->
 
     <div>
       <div class="row">
         <!-- sol panel -->
         <div class="">
-          <!-- sol panel -->
           <div class="card" style="width: 14rem">
             <div
               class="card-header"
@@ -322,12 +326,10 @@
             </div>
           </div>
         </div>
+        <!-- sol panel -->
 
         <!-- orta panel -->
-        <div
-          class="col-3"
-          style=""
-        >
+        <div class="col-3" style="">
           <div class="card">
             <div class="card-body">
               <input
@@ -540,6 +542,7 @@
             </div>
           </div>
         </div>
+        <!-- orta panel -->
 
         <!-- sağ panel -->
         <div class="">
@@ -710,8 +713,12 @@
             </div>
           </div>
         </div>
+        <!-- sağ panel -->
+
       </div>
     </div>
+
+
     <!-- mesajlaşma -->
     <nav
       class="navbar navbar-expand-xl navbar-light bg-dark position-sticky fixed-bottom border"
