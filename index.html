@@ -21,12 +21,12 @@
   <body class="body">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbarbg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light navbarbg fixed-top py-0 d-flex">
       <!-- Logo -->
       <a class="navbar-brand ml-5 pl-5" href="#"
         ><i
           class="fab fa-linkedin fa-lg"
-          style="color: #0a66c2; font-size: 2.4rem"
+          style="color: #0a66c2; font-size: 2.4rem; width: 34px; height: 34px;"
         ></i
       ></a>
       <button
@@ -38,7 +38,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       ></button>
-      <form class="form-inline pr-5">
+      <form class="form-inline flex-grow-1">
         <input
           class="form-control searche"
           type="search"
@@ -46,40 +46,40 @@
           aria-label="Search"
         />
       </form>
-      <div class="collapse navbar-collapse pl-5 ml-3 pr-5">
-        <ul class="navbar-nav mr-auto ml-5 mr-5 text-center">
+      <div class="collapse navbar-collapse pl-5 ml-3 ">
+        <ul class="navbar-nav ml-5 text-center">
           <li class="nav-item active mr-3">
             <a class="nav-link" href="#"
               ><i class="fas fa-home fa-lg" style="color: black">
-                <div class="menutext text-nowrap" style="color: black">Ana Sayfa</div></i
+                <div class="menutext text-nowrap font-weight-light" style="color: black">Ana Sayfa</div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-4">
             <a class="nav-link" href="#"
               ><i class="fas fa-user-friends fa-lg">
-                <div class="menutext text-nowrap">Ağım</div></i
+                <div class="menutext text-nowrap font-weight-light">Ağım</div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-2">
             <a class="nav-link" href="#"
               ><i class="fas fa-briefcase fa-lg">
-                <div class="menutext text-nowrap">İş İlanları</div></i
+                <div class="menutext text-nowrap font-weight-light">İş İlanları</div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-1">
             <a class="nav-link" href="#"
               ><i class="fas fa-comment-dots fa-lg">
-                <div class="menutext">Mesajlaşma</div></i
+                <div class="menutext font-weight-light">Mesajlaşma</div></i
               >
             </a>
           </li>
           <li class="nav-item active mr-1">
             <a class="nav-link" href="#"
               ><i class="fas fa-bell fa-lg">
-                <div class="menutext">Bildirimler</div></i
+                <div class="menutext font-weight-light" >Bildirimler</div></i
               >
             </a>
           </li>
@@ -92,32 +92,33 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
+              style="padding-top: 5px;"
             >
               <img 
                 
-                src="https://media-exp1.licdn.com/dms/image/C4D03AQFpMjVJ_N2wRQ/profile-displayphoto-shrink_100_100/0/1582787654653?e=1616630400&v=beta&t=C1X2NxhcN0R0GmELl1Ew7BeOoyGbwJXCw8c7lHm6XuA"
+                src="./assets/ben.jpg"
                 style="
-                  width: 25px;
-                  height: 25px;
+                  border-radius: 100%;
+                  width: 24px;
+                  height: 24px;
                 "
               />
               
               <div
-                class="menutext"
-              >
-                Ben
+                class="menutext" style="margin-top: 0px;"
+              >Ben
               </div>
             </a>
           </li>
           <li class="nav-item active border-left">
             <a class="nav-link ml-4 mr-2" href="#"
-              ><i class="fas fa-th fa-lg"> <div class="menutext">İş</div></i>
+              ><i class="fas fa-th fa-lg"> <div class="menutext font-weight-light">İş</div></i>
             </a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#"
               ><i class="fas fa-chalkboard fa-lg">
-                <div class="menutext text-nowrap">İş İlanı Yayınla</div></i
+                <div class="menutext text-nowrap font-weight-light">İş İlanı Yayınla</div></i
               >
             </a>
           </li>
