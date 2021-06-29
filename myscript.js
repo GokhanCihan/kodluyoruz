@@ -15,7 +15,7 @@ function myDateFunction() {
     let reachMonth = document.getElementById('ay')
     let reachClock = document.getElementById('saat')
     let reachDayOfWeek = document.getElementById('gunIsim')
-    
+    document.getElementById('place').innerHTML = `Saat:`
     if (mDay<10) (mDay = `0${mDay}`) 
     reachDayOfMonth.innerHTML = `${mDay}`
     
