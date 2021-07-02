@@ -4,13 +4,13 @@
 ## **Checklist for To Do List**
 - ~~Ekle butonuna tıklandığında yazılanlar listeye eklenir.~~
 
-- Listeye ekleme yapıldığında "listeye eklendi" mesajı görünür.
+- ~~Listeye ekleme yapıldığında "listeye eklendi" mesajı görünür(toast).~~
 
 - Çarpı işaretiyle listeye eklenenler silinebilir.
 
 - Tamamlanan görevler işaretlenebilir.
 
-- Boş karakter eklenemez. Eklenmek istendiğinde hata mesajı görünür(toast).
+- ~~Boş karakter eklenemez. Eklenmek istendiğinde hata mesajı görünür(toast).~~
 
 - Ekleme ve çıkarmalar **local storage**'a kaydedilir.
 
