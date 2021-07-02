@@ -4,7 +4,7 @@
 ## **Checklist for To Do List**
 - ~~Ekle butonuna tıklandığında yazılanlar listeye eklenir.~~
 
-- Listeye ekleme yapıldığında "başarılı" mesajı görünür.
+- Listeye ekleme yapıldığında "listeye eklendi" mesajı görünür.
 
 - Çarpı işaretiyle listeye eklenenler silinebilir.
 
