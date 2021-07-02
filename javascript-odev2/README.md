@@ -2,16 +2,15 @@
 [Şurada](https://github.com/Kodluyoruz/taskforce/tree/main/javascript/javascript-temel/odev2) bulunan to do list örneğinin **javascript** dosyasnın yazılması
 
 ## **Checklist for To Do List**
--[ ] Ekle butonuna tıklandığında yazılanlar listeye eklenir.
+- ~~Ekle butonuna tıklandığında yazılanlar listeye eklenir.~~
 
--[ ] Listeye ekleme yapıldığında "başarılı" mesajı görünür.
+- Listeye ekleme yapıldığında "başarılı" mesajı görünür.
 
--[ ] Çarpı işaretiyle listeye eklenenler silinebilir.
+- Çarpı işaretiyle listeye eklenenler silinebilir.
 
--[ ] Tamamlanan görevler işaretlenebilir.
+- Tamamlanan görevler işaretlenebilir.
 
--[ ] Boş karakter eklenemez. Eklenmek istendiğinde hata mesajı görünür(toast).
+- Boş karakter eklenemez. Eklenmek istendiğinde hata mesajı görünür(toast).
 
-
--[ ] Ekleme ve çıkarmalar **local storage**'a kaydedilir.
+- Ekleme ve çıkarmalar **local storage**'a kaydedilir.
 
