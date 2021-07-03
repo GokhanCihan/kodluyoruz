@@ -7,14 +7,28 @@
 5. Append list node to the list  
 */
 
+var ulList = document.getElementById("list")
 function newElement(){
     var newListNode = document.createElement("LI");
+    var newButtonNode = document.createElement("BUTTON")
     var valueNode = document.getElementById("task").value;
+  
     if(valueNode){
+
+        /*new li element*/
         var textNode = document.createTextNode(valueNode);
         newListNode.appendChild(textNode);
         newListNode.setAttribute("onclick","clickedList(this)")
-        document.getElementById("list").appendChild(newListNode);
+        ulList.appendChild(newListNode);
+
+        /*new button element (child of li)*/
+        newButtonNode.classList.add("button-remove")
+        newButtonNode.setAttribute("type","button")
+        newButtonNode.setAttribute("onclick","removesParentLi(this)")
+        newButtonNode.innerHTML = `&times;`
+        ulList.lastChild.appendChild(newButtonNode);
+        
+        /*raise toast*/
         $(document).ready(function(){
             $('.success').toast('show');
           });
@@ -25,10 +39,15 @@ function newElement(){
     }
 }
 
-function clickedList(elem){
-    if(elem.getAttribute("class")){
-        elem.removeAttribute("class")
+
+function clickedList(element){
+    if(element.getAttribute("class")){
+        element.removeAttribute("class")
     }else{
-        elem.setAttribute("class","checked")
+        element.setAttribute("class","checked")
     }
+}
+
+function removesParentLi(element){
+    element.parentNode.remove()
 }

@@ -6,7 +6,7 @@
 
 - ~~Listeye ekleme yapıldığında "listeye eklendi" mesajı görünür(toast).~~
 
-- Çarpı işaretiyle listeye eklenenler silinebilir.
+- ~~Çarpı işaretiyle listeye eklenenler silinebilir.~~
 
 - ~~Tamamlanan görevler işaretlenebilir.~~
 

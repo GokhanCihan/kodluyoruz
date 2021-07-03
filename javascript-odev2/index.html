@@ -77,11 +77,21 @@
       </div>
 
       <ul id="list">
-        <li onclick="clickedList(this)">3 Litre Su İç</li>
-        <li onclick="clickedList(this)">Ödevleri Yap</li>
-        <li onclick="clickedList(this)">En Az 3 Saat Kodlama Yap</li>
-        <li onclick="clickedList(this)">Yemek Yap</li>
-        <li onclick="clickedList(this)">50 Sayfa Kitap Oku</li>
+        <li onclick="clickedList(this)">3 Litre Su İç<button
+          onclick="removesParentLi(this)" 
+          class="button-remove" type="button">×</button></li>
+        <li onclick="clickedList(this)">Ödevleri Yap<button
+          onclick="removesParentLi(this)" 
+          class="button-remove" type="button">×</button></li>
+        <li onclick="clickedList(this)">En Az 3 Saat Kodlama Yap<button
+          onclick="removesParentLi(this)" 
+          class="button-remove" type="button">×</button></li>
+        <li onclick="clickedList(this)">Yemek Yap<button
+          onclick="removesParentLi(this)" 
+          class="button-remove" type="button">×</button></li>
+        <li onclick="clickedList(this)">50 Sayfa Kitap Oku<button
+          onclick="removesParentLi(this)" 
+          class="button-remove" type="button">×</button></li>
       </ul>
       <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
