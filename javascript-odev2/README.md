@@ -8,7 +8,7 @@
 
 - Çarpı işaretiyle listeye eklenenler silinebilir.
 
-- Tamamlanan görevler işaretlenebilir.
+- ~~Tamamlanan görevler işaretlenebilir.~~
 
 - ~~Boş karakter eklenemez. Eklenmek istendiğinde hata mesajı görünür(toast).~~
 

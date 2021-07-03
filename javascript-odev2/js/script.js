@@ -13,6 +13,7 @@ function newElement(){
     if(valueNode){
         var textNode = document.createTextNode(valueNode);
         newListNode.appendChild(textNode);
+        newListNode.setAttribute("onclick","clickedList(this)")
         document.getElementById("list").appendChild(newListNode);
         $(document).ready(function(){
             $('.success').toast('show');
@@ -24,5 +25,10 @@ function newElement(){
     }
 }
 
-
-
+function clickedList(elem){
+    if(elem.getAttribute("class")){
+        elem.removeAttribute("class")
+    }else{
+        elem.setAttribute("class","checked")
+    }
+}
