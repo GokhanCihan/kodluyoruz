@@ -1,6 +1,3 @@
-
-
-
 var ulList = document.getElementById("list")
 function newElement(){
     /* 
