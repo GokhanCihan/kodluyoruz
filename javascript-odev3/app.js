@@ -100,16 +100,32 @@ menu.forEach(element => {
 });
 
 /* create buttons */
+var buttonNames = ["All", "Japan", "Korea", "China"]
 
-for(i in buttonNames = ["All", "Japan", "Korea", "China"]){
+for(i in buttonNames){
   var buttonFilter = document.querySelector(".btn-container")
   var newButton = document.createElement("BUTTON");
   var nodeText = `${buttonNames[i]}`
   var textNode = document.createTextNode(nodeText)
-  newButton.setAttribute("onclick", "getMenuItems()")
+  newButton.setAttribute("onclick", "addMenuItems(this)")
+  newButton.setAttribute("id",nodeText)
   newButton.classList.add("btn","btn-item");
   newButton.appendChild(textNode);
   buttonFilter.appendChild(newButton);
 }
 
-/*function getMenuItems()*/
+function getItems(buttonId){
+  if(buttonId == "All"){
+    return menu
+  }else if (buttonId == "Japan"){
+    return japanMenu
+  }else if (buttonId == "Korea"){
+    return koreaMenu
+  }else{
+    return chinaMenu
+  }
+}
+
+function addMenuItems(bttn){
+  var menuItems = getItems(bttn.id)
+}
