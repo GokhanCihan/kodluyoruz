@@ -81,3 +81,35 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+
+/* create arrays for each category */
+var japanMenu = []
+var koreaMenu = []
+var chinaMenu = []
+
+menu.forEach(element => {
+  if(element.category == "Japan"){
+    japanMenu.push(element);
+  }
+  else if(element.category == "Korea"){
+    koreaMenu.push(element);
+  }
+  else{ 
+    chinaMenu.push(element);
+  }
+});
+
+/* create buttons */
+
+for(i in buttonNames = ["All", "Japan", "Korea", "China"]){
+  var buttonFilter = document.querySelector(".btn-container")
+  var newButton = document.createElement("BUTTON");
+  var nodeText = `${buttonNames[i]}`
+  var textNode = document.createTextNode(nodeText)
+  newButton.setAttribute("onclick", "getMenuItems()")
+  newButton.classList.add("btn","btn-item");
+  newButton.appendChild(textNode);
+  buttonFilter.appendChild(newButton);
+}
+
+/*function getMenuItems()*/
