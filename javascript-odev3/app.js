@@ -109,7 +109,7 @@ for(i in buttonNames){
   var textNode = document.createTextNode(nodeText)
   newButton.setAttribute("onclick", "addMenuItems(this)")
   newButton.setAttribute("id",nodeText)
-  newButton.classList.add("btn","btn-item");
+  newButton.classList.add("btn","btn-item","btn-outline-dark");
   newButton.appendChild(textNode);
   buttonFilter.appendChild(newButton);
 }
@@ -126,6 +126,25 @@ function getItems(buttonId){
   }
 }
 
-function addMenuItems(bttn){
-  var menuItems = getItems(bttn.id)
+function createHtmlText (id, photo, alt, title, price, desc){
+  return `<div class="col-12 col-md-6 menu-items" id="item${id}">
+            <img class="photo" src="${photo}" alt="${alt}">
+            <div class="menu-info">
+              <div class="menu-title">
+                <h4>${title}</h4>
+                <h4>${price}</h4>
+              </div>
+              <div class="menu-text">${desc}</div>
+            </div>  
+          </div>`
 }
+
+function addMenuItems(bttn){
+  var menuItems = getItems(bttn.id).map( x => createHtmlText(x.id, x.img, x.title, x.title, x.price, x.desc));
+  var htmlText = menuItems.reduce((acc, curr) => {return acc+curr;},"")
+  var menuDOM = document.querySelector(".section-center")
+  menuDOM.innerHTML = htmlText;
+}
+
+var allMenu = document.querySelector("#All")
+window.onload = addMenuItems(allMenu)
