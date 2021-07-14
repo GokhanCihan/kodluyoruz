@@ -1,36 +1,25 @@
 import React from 'react';
-import { useState } from 'react';
 
-const initialState = [
-    {
-        task: 'Learn JavaScript',
-        isComplete: false 
-    }, { 
-        task: 'Learn React',
-        isComplete: false
-    }];
-
-function Tasks(props) {
-    const [tasks, setTasks] = useState(initialState);
-
+function Tasks({tasks}) {
+    console.log(tasks)
     return (
         <section className="main">
 		  	<input className="toggle-all" type="checkbox"/>
-		  	<label for="toggle-all">
+		  	<label htmlFor="toggle-all">
 		      Mark all as complete
 		  	</label>
 		  	<ul className="todo-list">
-                {tasks.map((element, i) => {
+               {/*  {taskList.map((element) => {
                     return(
                     <li key='i'>
                         <div className='view'>
-                            <input className='toggle' type='checkbox' />
+                            <input className='toggle' type='checkbox' value={element.toggleChecked} />
                             <label>{element.task}</label>
-                            <button className="destroy"></button>
+                            <button className="destroy" value={element.isComplete}></button>
                         </div>
                     </li>
                     )
-                })};
+                })}; */}
 		  	</ul>
 	    </section>
     )

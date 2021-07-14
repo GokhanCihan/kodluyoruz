@@ -1,13 +1,31 @@
 import React from "react";
+import { useState } from "react";
 import Form from "./components/Form/Form.js";
 import Tasks from "./components/Tasks/Tasks.js";
 
+
+const initialState= [
+	{
+	id : 0,
+	task : 'Learn javascript',
+	isComplete : false,
+	doDestroy : false
+},{
+	id : 1,
+	task : 'Learn react',
+	isComplete : false,
+	doDestroy : false,
+}
+];
+
 function App() {
+	const [tasks, setTasks] = useState(initialState)
+
   return (
     <div>
       	<section className="todoapp">
-	      	<Form />
-			<Tasks />
+	      	<Form addTask = {setTasks} tasks = {tasks} />
+			<Tasks tasks = {tasks}/>
 	      	      
 	     	{/* This footer should hidden by default and shown when there are todos*/}
 	      	<footer className="footer">
@@ -20,13 +38,13 @@ function App() {
 
           		<ul className ="filters">
             		<li>
-            		  <a className="selected">All</a>
+            		  <a href='this' className="selected">All</a>
             		</li>
             		<li>
-            		  <a>Active</a>
+            		  <a href='this'>Active</a>
             		</li>
             		<li>
-            		  <a>Completed</a>
+            		  <a href='this'>Completed</a>
             		</li>
           		</ul>
 
