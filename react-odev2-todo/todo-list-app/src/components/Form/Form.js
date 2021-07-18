@@ -1,9 +1,7 @@
 import React from "react";
 import { useState } from "react";
-
 var i=1;
 function Form({addTask, tasks}) {
-	
 	const[form, setForm] = useState('');
 
 	const onChangeInput = ((e) => {setForm(e.target.value)})
@@ -17,8 +15,8 @@ function Form({addTask, tasks}) {
 		}		
 	}
 	const onSubmit = () => {
-		i++
-		addTask([...tasks, { id: i, task: form, isComplete: false, doDestroy: false}])
+		i=i+1
+		addTask([...tasks, { id: i, task: form}])
 	}
 
 
