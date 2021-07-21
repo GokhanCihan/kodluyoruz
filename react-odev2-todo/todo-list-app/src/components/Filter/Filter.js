@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-function Filtertasks({tasks, addTask}) {
+function Filtertasks() {
     return (	
-        <footer hidden={(tasks.length === 0) ? true : false} className="footer">
+        <footer className="footer">
 
             {/* This should be `0 items left` by default*/}
             <span className="todo-count">
-                <strong>{tasks.length+' '}</strong>
+                <strong></strong>
                   items left
             </span>
 
