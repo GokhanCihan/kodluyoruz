@@ -1,6 +1,6 @@
 import React from "react";
 
-function Form() {
+function NewTask() {
 	
 
 
@@ -17,4 +17,4 @@ function Form() {
     )    
 }
 
-export default Form;
+export default NewTask;

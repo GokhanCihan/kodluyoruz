@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Filtertasks() {
+function Filter() {
     return (	
         <footer className="footer">
 
@@ -31,4 +31,4 @@ function Filtertasks() {
     )
 }
 
-export default Filtertasks;
+export default Filter;
