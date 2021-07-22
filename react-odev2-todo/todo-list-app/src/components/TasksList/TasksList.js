@@ -1,7 +1,15 @@
 import React from 'react';
 import { useState } from 'react';
 
-function TasksList({allTasks, activeTasks, completedTasks, setActiveTasks, setCompletedTasks}) {
+function TasksList(
+    {
+    allTasks,
+    activeTasks,
+    completedTasks,
+    setActiveTasks,
+    setCompletedTasks
+    }) 
+    {
     const [isChecked, setIsChecked] = useState(false)
     const onClick = (e) => {       
         let task = e.target.nextSibling.innerHTML;
@@ -13,7 +21,6 @@ function TasksList({allTasks, activeTasks, completedTasks, setActiveTasks, setCo
             setActiveTasks([...activeTasks, task]);
         };
     }
-
     const removeTask = (e) => {
         let task = e.target.previousSibling.innerHTML;
         if(activeTasks.includes(task)){
@@ -21,9 +28,7 @@ function TasksList({allTasks, activeTasks, completedTasks, setActiveTasks, setCo
         }else{
             setCompletedTasks(completedTasks.filter(item => item !== task));;
         };
-
     }
-
     const completeAll = (e) => {
         if(isChecked){
             setActiveTasks([...activeTasks, ...completedTasks])
@@ -35,6 +40,7 @@ function TasksList({allTasks, activeTasks, completedTasks, setActiveTasks, setCo
             setIsChecked(true)
         }      
     }
+
     return (
         <section className="main">
             <div>
@@ -54,6 +60,7 @@ function TasksList({allTasks, activeTasks, completedTasks, setActiveTasks, setCo
 		    Mark all as complete
 		  	</label>
             </div>
+
             {/* listed tasks */} 
 		  	<ul className="todo-list">  
                 {allTasks.map((item, index) => {

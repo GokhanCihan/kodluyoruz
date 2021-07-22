@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import NewTask from "./components/NewTask/NewTask";
 import TasksList from "./components/TasksList/TasksList";
 import Filter from "./components/Filter/Filter";
-
 
 function App() {
 	const [activeTasks, setActiveTasks] = useState(
@@ -18,13 +17,6 @@ function App() {
 		'Learn Redux'
 		]
 	)
-	
-	/* Updates allTasks array whenever activeTasks or completedTasks array is changed. */
-	useEffect(() => {
-		setAllTasks(activeTasks.concat(completedTasks))
-	}, [activeTasks, completedTasks])
-
-	console.log(`all tasks: ${allTasks}, active tasks: ${activeTasks}, completed tasks: ${completedTasks}`);
 
   	return (
     	<div>
@@ -40,7 +32,14 @@ function App() {
 				setActiveTasks = {setActiveTasks}
 				setCompletedTasks = {setCompletedTasks}
 				/>
-				<Filter />
+				<Filter
+				allTasks = {allTasks}
+				activeTasks = {activeTasks}
+				completedTasks = {completedTasks} 
+				setActiveTasks = {setActiveTasks}
+				setCompletedTasks = {setCompletedTasks}
+				setAllTasks = {setAllTasks}
+				/>
       		</section>
     	</div>
   );

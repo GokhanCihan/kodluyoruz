@@ -1,30 +1,71 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 
+function Filter(
+    {
+    allTasks,
+    activeTasks,
+    completedTasks,
+    setAllTasks,
+    setCompletedTasks
+    }){
+    const [btnAll, setBtnAll] = useState("selected")
+    const [btnActive, setBtnActive] = useState(null)
+    const [btnCompleted, setBtnCompleted] = useState(null)
 
-function Filter() {
-    return (	
-        <footer className="footer">
+    const clearCompleted = () => setCompletedTasks(completedTasks.filter(item => item === !item));
+    const showAll = () => {
+        setAllTasks(activeTasks.concat(completedTasks))
+        setBtnAll("selected");
+        setBtnActive(null);
+        setBtnCompleted(null);
+    }
+    const showActive = () => {
+        setAllTasks(activeTasks)
+        setBtnAll(null); 
+        setBtnActive("selected");
+        setBtnCompleted(null);
+    }
+    const showCompleted = () => {
+        setAllTasks(completedTasks)
+        setBtnAll(null); 
+        setBtnActive(null);
+        setBtnCompleted("selected");
+    }
 
-            {/* This should be `0 items left` by default*/}
+    useEffect(() => {
+		setAllTasks(activeTasks.concat(completedTasks))
+        setBtnAll("selected");
+        setBtnActive(null);
+        setBtnCompleted(null);
+	}, [activeTasks, completedTasks, setAllTasks])
+
+    return (
+        <footer className="footer" hidden={(activeTasks.length === 0 && completedTasks.length === 0 )?(true):(false)}>
+            {/* items left */}
             <span className="todo-count">
-                <strong></strong>
-                  items left
+                <strong>{activeTasks.length}</strong>
+                    {` items left`}
             </span>
 
             <ul className ="filters">
                 <li>
-                    <a href='this' className="selected">All</a>
+                    <a className={btnAll} onClick={showAll}>All</a>
                 </li>
                 <li>
-                    <a href='this'>Active</a>
+                    <a className={btnActive} onClick={showActive}>Active</a>
                 </li>
                 <li>
-                    <a href='this'>Completed</a>
+                    <a className={btnCompleted} onClick={showCompleted}>Completed</a>
                 </li>
             </ul>
 
             {/* Hidden if no completed items are left ↓ */}
-            <button className="clear-completed">
+            <button 
+            className = "clear-completed" 
+            hidden = {(completedTasks.length === 0)?(true):(false)}
+            onClick = {clearCompleted}
+            >
                 Clear completed
             </button>
         </footer>
