@@ -1,9 +1,17 @@
 Unsorted Array: [ 16, 21, 11, 8, 12, 22 ]
 
 Merge Sort
-- Divide array to two equal parts:                                               [ 16, 21, 11 ]           [ 8, 12, 22 ]
-- Divide each array to two equal parts if possible:                           [ 16 ]   [ 21, 11 ]      [ 8 ]    [ 12, 22 ]
-- Divide each array to two equal parts if possible:                           [ 16 ]  [ 21 ][ 11 ]     [ 8 ]   [ 12 ][ 22 ]
-- Compare, sort and merge each part:                                          [ 16 ]   [ 11, 21 ]      [ 8 ]    [ 12, 22 ]
-- Compare, sort and merge each part:                                             [ 11, 16, 21 ]           [ 8, 12, 22 ]
-- Compare, sort and merge each part:                                                  [ 8, 11, 12, 16, 21, 22 ]
+
+- Divide array to two equal parts: O(logn)                             [ 16, 21, 11 ]          < divide >          [ 8, 12, 22 ]
+
+- Divide each array to two equal parts if possible: O(logn)      [ 16 ]< divide >[ 21, 11 ]                   [ 8 ]< divide >[ 12, 22 ]
+
+- Divide each array to two equal parts if possible: O(logn)      [ 16 ] [ 21 ]< divide >[ 11 ]                [ 8 ] [ 12 ]< divide >[ 22 ]
+
+- Compare, sort and merge each part: O(n)                        [ 16 ] [ 21 ]> merge, sort <[ 11 ]           [ 8 ] [ 12 ]> merge, sort <[ 22 ]
+
+- Compare, sort and merge each part: O(n)                        [ 16 ]> merge, sort <[ 11, 21 ]              [ 8 ]> merge, sort <[ 12, 22 ]
+
+- Compare, sort and merge each part: O(n)                                         [ 11, 16, 21 ]> merge, sort <[ 8, 12, 22 ]
+        
+            Overall: O(n.logn)                                                             [ 8, 11, 12, 16, 21, 22 ]
