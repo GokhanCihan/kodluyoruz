@@ -1,0 +1,9 @@
+Unsorted Array: [ 16, 21, 11, 8, 12, 22 ]
+
+Merge Sort
+- Divide array to two equal parts:                                               [ 16, 21, 11 ]           [ 8, 12, 22 ]
+- Divide each array to two equal parts if possible:                           [ 16 ]   [ 21, 11 ]      [ 8 ]    [ 12, 22 ]
+- Divide each array to two equal parts if possible:                           [ 16 ]  [ 21 ][ 11 ]     [ 8 ]   [ 12 ][ 22 ]
+- Compare, sort and merge each part:                                          [ 16 ]   [ 11, 21 ]      [ 8 ]    [ 12, 22 ]
+- Compare, sort and merge each part:                                             [ 11, 16, 21 ]           [ 8, 12, 22 ]
+- Compare, sort and merge each part:                                                  [ 8, 11, 12, 16, 21, 22 ]
