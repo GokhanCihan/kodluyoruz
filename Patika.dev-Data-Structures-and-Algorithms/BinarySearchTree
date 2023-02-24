@@ -1,0 +1,11 @@
+Binary SearchTree
+[ 7, 5, 1, 8, 3, 6, 0, 9, 4, 2 ]
+- If parent node is greater, create child node and append leftside of the parent node
+- If parent node is smaller, create child node and append rightside of the parent node
+
+Level
+0                                     7
+1                                  5/  \8
+2                                 1/\6   \9
+3                                0/\3
+4                                 2/\4
