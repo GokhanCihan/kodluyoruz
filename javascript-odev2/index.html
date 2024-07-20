@@ -44,18 +44,18 @@
         class="mb-1" alt=""/>
         <h2>Yapılacaklar Listesi</h2>
         <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
-        <span onclick="newElement()" id="liveToastBtn" class="button">Ekle</span>
+        <span onclick="createTask()" id="liveToastBtn" class="button">Ekle</span>
       </div>
       <ul id="list">
-        <li onclick="getListItem(this)">
+        <li onclick="toggleCheck(this)">
           En Az 3 Saat Kodlama Yap
           <button onclick="removeParent(this)" class="button-remove" type="button">×</button>
         </li>
-        <li onclick="clickedList(this)">
+        <li onclick="toggleCheck(this)">
           Yemek Yap
           <button onclick="removeParent(this)" class="button-remove" type="button">×</button>
         </li>
-        <li onclick="clickedList(this)">
+        <li onclick="toggleCheck(this)">
           50 Sayfa Kitap Oku
           <button onclick="removeParent(this)" class="button-remove" type="button">×</button>
         </li>
