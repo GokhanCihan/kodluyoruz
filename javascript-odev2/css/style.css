@@ -53,13 +53,12 @@ ul li.checked::before {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 12px 16px 12px 16px;
+  padding: 12px 12px 12px 12px;
 }
 
 .close:hover {
   background-color: #f78501;
   color: white;
-
 }
 
 .header {
