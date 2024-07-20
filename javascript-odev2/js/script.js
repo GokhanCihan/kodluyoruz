@@ -1,4 +1,4 @@
-var ulList = document.getElementById("list")
+const list = document.getElementById("list")
 function newElement(){
     /* 
     1. Create a node for li element
@@ -7,28 +7,27 @@ function newElement(){
     4. Append text node to list node
     5. Append list node to the list 
     */
-    var newListNode = document.createElement("LI");
-    var newButtonNode = document.createElement("BUTTON")
-    var valueNode = document.getElementById("task").value;
+    const listItem = document.createElement("li");
+    const buttonRemove = document.createElement("button")
+    const task = document.getElementById("task").value;
   
-    if(valueNode){
-
+    if(task){
         /* add properties for li element */
-        var textNode = document.createTextNode(valueNode);
-        newListNode.appendChild(textNode);
-        newListNode.setAttribute("onclick","clickedList(this)")
+        const textNode = document.createTextNode(task);
+        listItem.appendChild(textNode);
+        listItem.setAttribute("onclick", "getListItem(this)")
         
         /* add properties for button */
-        newButtonNode.classList.add("button-remove")
-        newButtonNode.setAttribute("type","button")
-        newButtonNode.setAttribute("onclick","removesParentLi(this)")
-        newButtonNode.innerHTML = `&times;`
+        buttonRemove.classList.add("button-remove")
+        buttonRemove.setAttribute("type", "button")
+        buttonRemove.setAttribute("onclick", "removeParent(this)")
+        buttonRemove.innerHTML = `&times;`
         
         /* append button to the li element */ 
-        newListNode.appendChild(newButtonNode)
+        listItem.appendChild(buttonRemove)
         
         /* append full li node to the parent ul element */
-        ulList.appendChild(newListNode);
+        list.appendChild(listItem);
       
         /* raise toast */
         $(document).ready(function(){
@@ -41,7 +40,7 @@ function newElement(){
     }
 }
 
-function clickedList(element){
+function getListItem(element){
     if(element.getAttribute("class")){
         element.removeAttribute("class")
     }else{
@@ -49,7 +48,7 @@ function clickedList(element){
     }
 }
 
-function removesParentLi(element){
+function removeParent(element){
     element.parentNode.remove()
 }
 
