@@ -32,7 +32,7 @@ const menu = [
     category: "China",
     price: 5.99,
     img:
-      "https://www.savingdessert.com/wp-content/uploads/2019/02/Dan-Dan-Noodles-10.jpg",
+      "https://thewoksoflife.com/wp-content/uploads/2014/11/dan-dan-noodles-12.jpg",
     desc: `Dan dan noodle, serving with green onion `,
   },
   {
@@ -82,16 +82,15 @@ const menu = [
   },
 ];
 
-/* create arrays for each category */
-var japanMenu = []
-var koreaMenu = []
-var chinaMenu = []
+const japanMenu = []
+const koreaMenu = []
+const chinaMenu = []
 
 menu.forEach(element => {
-  if(element.category == "Japan"){
+  if(element.category === "Japan"){
     japanMenu.push(element);
   }
-  else if(element.category == "Korea"){
+  else if(element.category === "Korea"){
     koreaMenu.push(element);
   }
   else{ 
@@ -99,16 +98,15 @@ menu.forEach(element => {
   }
 });
 
-/* create buttons */
-var buttonNames = ["All", "Japan", "Korea", "China"]
+const kitchens = ["All", "Japan", "Korea", "China"]
 
-for(i in buttonNames){
-  var buttonFilter = document.querySelector(".btn-container")
-  var newButton = document.createElement("BUTTON");
-  var nodeText = `${buttonNames[i]}`
-  var textNode = document.createTextNode(nodeText)
+for(i in kitchens){
+  const buttonFilter = document.querySelector(".btn-container")
+  const newButton = document.createElement("BUTTON");
+  const text = `${kitchens[i]}`
+  const textNode = document.createTextNode(text)
   newButton.setAttribute("onclick", "addMenuItems(this)")
-  newButton.setAttribute("id",nodeText)
+  newButton.setAttribute("id",text)
   newButton.classList.add("btn","btn-item","btn-outline-dark");
   newButton.appendChild(textNode);
   buttonFilter.appendChild(newButton);
@@ -126,7 +124,7 @@ function getItems(buttonId){
   }
 }
 
-function createHtmlText (id, photo, alt, title, price, desc){
+function createMenuItem (id, photo, alt, title, price, desc){
   return `<div class="col-12 col-md-6 menu-items" id="item${id}">
             <img class="photo" src="${photo}" alt="${alt}">
             <div class="menu-info">
@@ -140,11 +138,11 @@ function createHtmlText (id, photo, alt, title, price, desc){
 }
 
 function addMenuItems(bttn){
-  var menuItems = getItems(bttn.id).map( x => createHtmlText(x.id, x.img, x.title, x.title, x.price, x.desc));
-  var htmlText = menuItems.reduce((acc, curr) => {return acc+curr;},"")
-  var menuDOM = document.querySelector(".section-center")
+  const menuItems = getItems(bttn.id).map( x => createMenuItem(x.id, x.img, x.title, x.title, x.price, x.desc));
+  const htmlText = menuItems.reduce((acc, curr) => {return acc + curr;},"")
+  const menuDOM = document.querySelector(".section-center")
   menuDOM.innerHTML = htmlText;
 }
 
-var allMenu = document.querySelector("#All")
+const allMenu = document.querySelector("#All")
 window.onload = addMenuItems(allMenu)
